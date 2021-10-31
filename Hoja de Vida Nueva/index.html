@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=devide-with, initial-scale=1.0">
+  <title>Hoja de Vida</title>
+
+  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+</head>
+
+<body class="bg-secondary">
+
+  <div class="contenedor container">
+
+    <header class="cabecera">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <img src="img/escudo.png">
+          </div>
+
+          <div class="col-4">
+            <p align="center">FORMATO ÚNICO</p>
+            <h3 align="center">HOJA DE VIDA</h3>
+            <H5 align="center">Persona Natural </H5>
+            <h9 align="center">(Leyes 190 de 1995, 489 y 443 de 1998)</h9>
+          </div>
+
+          <div class="col-4">
+            <h9>ENTIDAD RECEPTORA</h9>
+            <input type="text" name="">
+
+          </div>
+        </div>
+      </div>
+    </header>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div id="DTP">
+          <div id="Num">1</div>  
+          <div id="line"></div>  
+          <div id="Datos">DATOS PERSONALES</div>  
+        </div>
+      </div>
+    </div>
+<br><br>
+    <!-- ///////// SECCIÓN DATOS PERSONALES /////////-->
+    <div id="contenido" onkeydown="datospersonales()">
+      <section class="datospersonales">
+        <div class="container">
+          <div class="row">
+            <div class="col-4 colum">
+              <h6>PRIMER APELLIDO</h6>
+              <input type="text" name="apellido" id="apellido1">
+            </div>
+            <div class="col-4 colum">
+              <h6>SEGUNDO APELLIDO (O DE CASADA)</h6>
+              <input type="text" name="segapellido" id="apellido2">
+            </div>
+
+            <div class="col-4 colum">
+              <h6>NOMBRES</h6>
+              <input type="text" name="nombre" id="nombre">
+            </div>
+          </div>
+          <!-- <button type="button" onclick="datospersonales()">agregar</button> -->
+
+          <div class="row">
+            <div class="col-5 colum">
+              <h6>DOCUMENTO DE IDENTIFICACIÓN</h6>
+              C.C <input type="radio" name="tipo" value="cc">&nbsp;
+              C.E <input type="radio" name="tipo" value="ce">&nbsp;
+              PAS <input type="radio" name="tipo" value="pas">
+
+              &nbsp; &nbsp;
+              N° <input type="text">
+            </div>
+
+            <div class="col-2 colum">
+              <h6>SEXO</h6>
+              F <input type="radio" name="sexof" value="f">&nbsp;
+              M <input type="radio" name="sexof" value="m">
+            </div>
+
+            <div class="col-5 colum">
+              <h6>NACIONALIDAD &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAIS</h6>
+              COL <input type="radio" name="nacionalidad" value="col">&nbsp;
+              EXTRANJERO <input type="radio" name="nacionalidad" value="ext">&nbsp;
+              <input type="text">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12 colum">
+              <h6>LIBRETA MILITAR</h6>
+              PRIMERA CLASE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="libreta" value="primclase">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              SEGUNDA CLASE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="libreta" value="primclase">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              NÚMERO &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="libreta" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              D.M &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="libreta" value="">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-6 colum">
+              <h6>FECHA Y LUGAR DE NACIMIENTO</h6>
+              FECHA &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              DÍA&nbsp;&nbsp;<tr>
+                <td ><input type="text" id="cuadro"></td>
+                <td ><input type="text"id="cuadro"></td>
+              </tr>&nbsp;&nbsp;
+              MES&nbsp;&nbsp;<tr>
+                <td ><input type="text" id="cuadro"></td>
+                <td ><input type="text"id="cuadro"></td>
+              </tr>&nbsp;&nbsp;
+              AÑO&nbsp;&nbsp;<tr>
+                <td ><input type="text" id="cuadro"></td>
+                <td ><input type="text"id="cuadro"></td>
+                <td ><input type="text" id="cuadro"></td>
+                <td ><input type="text"id="cuadro"></td>
+              </tr>
+            </br>
+              PAIS
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="caja"></br>
+              DEPTO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" id="caja"></br>
+              MUNICIPIO&nbsp;&nbsp;<input type="text" id="caja">
+            </div>
+
+            <div class="col-6 colum">
+              <h6>DIRECCIÓN DE CORRESPONDENCIA</h6>
+              <input type="text" id="caja"><br>
+              PAIS&nbsp;<input type="text" id="caja">
+              DEPTO &nbsp;<input type="text" id="caja"></br>
+              MUNICIPIO&nbsp;&nbsp;<input type="text" id="caja"><br>
+              TÉL&nbsp;&nbsp;<input type="text" id="caja">&nbsp;
+              EMAIL&nbsp;<input type="email" id="caja"> 
+
+
+            </div>
+          </div>
+
+        </div>
+      </section>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////// -->
+    <div class="container">
+      <br>
+      <h4 class="textosmedios" style='cursor: pointer;' onclick="muestra_oculta('contenido2')"> 2 FORMACIÓN ACADÉMICA
+      </h4>
+      <br>
+    </div>
+
+    <!-- ///////////////////// SECCIÓN FORMACIÓN ACADÉMICA //////////////////////// -->
+    <div id="contenido2">
+      <section id="formacionacademica">
+        <div class="container formacade">
+          <div class="row">
+            <div class="col-12">
+              <h6><b>EDUCACIÓN BÁSICA Y MEDIA</b> </br>MARQUE CON UNA X EL ÚLTIMO GRADO APROBADO ( LOS GRADOS DE 1o. A
+                6o. DE BACHILLERATO EQUIVALEN A LOS GRADOS 6o. A 11o. DEEDUCACIÓN BÁSICA SECUNDARIA Y MEDIA )</h6>
+
+
+              <div class="container" id="tablaeducacion">
+                <div class="row">
+                  <div class="col-6 colum color">
+                    <h5 align="center">EDUCACION BÁSICA</h5>
+                  </div>
+                  <div class="col-6 colum">
+                    <h5>TÍTULO OBTENIDO:</h5>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6 colum">
+                    <div class="row color">
+                      <div class="col-5">
+                        <h6>PRIMARIA</h6>
+                      </div>
+                      <div class="col-4">
+                        <h6>SECUNDARIA</h6>
+                      </div>
+                      <div class="col-2">
+                        <h6>MEDIA</h6>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="col colum color">
+                    <h5>FECHA DE GRADO</h5>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-6 colum">
+                    <div class="row">
+                      <div class="col-1">1° </div>
+                      <div class="col-1">2° </div>
+                      <div class="col-1">3° </div>
+                      <div class="col-1">4° </div>
+                      <div class="col-1">5° </div>
+                      <div class="col-1">6° </div>
+                      <div class="col-1">7° </div>
+                      <div class="col-1">8° </div>
+                      <div class="col-1">9° </div>
+                      <div class="col-1">10° </div>
+                      <div class="col-1">11° </div>
+                    </div>
+                  </div>
+                  <div class="col-6 colum">
+                    <h5>MES</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <br>
+
+          <div class="row">
+            <div class="col-12 colum">
+              <h6><b>EDUCACION SUPERIOR (PREGRADO Y POSTGRADO) </b></br>DILIGENCIE ESTE PUNTO EN ESTRICTO ORDEN
+                CRONOLÓGICO, EN MODALIDAD ACADÉMICA ESCRIBA:</h6>
+              <div class="row">
+                <div class="col-3">
+                  <h5><b>TC</b>(TÉCNICA),<br> <b>ES</b>(ESPECIALIZACIÓN),</h5>
+                </div>
+                <div class="col-3">
+                  <h5><b>Tl</b>(TECNOLÓGICA)<br> <b>MG</b>(MAESTRÍA O MAGISTER),</h5>
+                </div>
+                <div class="col-3">
+                  <h5><b>TE</b>(TECNOLÓGICA ESPECIALIZADA),<br> <b>DOC</b> (DOCTORADO O PHD),</h5>
+                </div>
+                <div class="col-3">
+                  <h5><b>UN</b> (UNIVERSITARIA),</h5>
+                </div>
+              </div>
+              <H6>RELACIONE AL FRENTE EL NÚMERO DE LA TARJETA PROFESIONAL (SI ÉSTA HA SIDO PREVISTA EN UNA LEY)</H6>
+            </div>
+          </div>
+
+
+
+          <div class="row">
+            <div class="col colum">
+              <h5>MODALIDAD ACADÉMICA</h5>
+            </div>
+            <div class="col colum">
+              <h5>SEMESTRES APROBADOS</h5>
+            </div>
+            <div class="col colum">
+              <h5>GRADUADO</h5>
+              <div class="row">
+                <div class="col colum">
+                  <h5>SI</h5>
+                </div>
+                <div class="col colum">
+                  <h5>NO</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-4 colum">
+              <h5>NOMBRE DE LOS ESTUDIOS O TÍTULO OBTENIDO</h5>
+            </div>
+            <div class="col-2 colum">
+              <h5>TERMINACIÓN</h5>
+              <div class="row">
+                <div class="col colum">
+                  <h5>MES</h5>
+                </div>
+                <div class="col colum">
+                  <h5>AÑO</h5>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="col-2 colum">
+              <h5>N DE TARJETA PROFESIONAL</h5>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+    </div>
+
+</body>
+
+
+</html>

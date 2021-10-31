@@ -1,0 +1,166 @@
+p,
+h2,
+h4 {
+  font-family: arial;
+}
+
+img {
+  width: 133px;
+  height: 152px;
+}
+
+.contenedor {
+  width: 60%;
+  margin: auto;
+  border: 1px 0px 0px 0px solid #000000;
+  height: 1000px;
+  background: white;
+  padding-top: 40px;
+}
+
+.cabecera .container {
+  width: 90%;
+  padding-top: 5px;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  padding-left: 5%;
+  -webkit-box-shadow: 5px 5px 0px #000000;
+  -moz-box-shadow: 5px 5px 0px #000000;
+  box-shadow: 5px 5px 0px #000000;
+}
+
+.textosmedios {
+  background: black;
+  color: white;
+  font-size: 18px;
+  font-family: arial;
+  display: inline-block;
+  border-radius: 5px;
+  margin-left: 40px;
+}
+
+.colum {
+  border: 1px solid #000000;
+}
+
+/*.datospersonales{
+    width: 90%;
+    padding-top: 5px;
+    border: 1px solid #000000;
+}
+*/
+.datospersonales .container {
+  width: 90%;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 5px 5px 0px #000000;
+  -moz-box-shadow: 5px 5px 0px #000000;
+  box-shadow: 5px 5px 0px #000000;
+  background: #f2fafc;
+}
+
+.datospersonales h6 {
+  font-family: arial;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.datospersonales input {
+  border: 0;
+}
+
+#formacionacademica .formacade {
+  width: 90%;
+  border: 1px solid #000000;
+  -webkit-box-shadow: 5px 5px 0px #000000;
+  -moz-box-shadow: 5px 5px 0px #000000;
+  box-shadow: 5px 5px 0px #000000;
+  background: #f2fafc;
+}
+
+#formacionacademica h6 {
+  font-family: arial;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+#formacionacademica h5 {
+  font-family: arial;
+  font-size: 12px;
+}
+
+#tablaeducacion {
+  width: 90%;
+  border: 1px solid #666666;
+  border-radius: 10px;
+}
+
+#tablaeducacion h5 {
+  font-family: arial;
+  font-size: 12px;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+#tablaeducacion h6 {
+  font-family: arial;
+  font-size: 11px;
+}
+
+#tablaeducacion .educabass {
+  background: #d9f1f6;
+}
+
+.color {
+  background: #d9f1f6;
+}
+#cuadro{
+  border:1px solid black;
+  width: 20px;
+  height: 20px;
+}
+#caja{
+  border-bottom: 1px solid black;
+}
+#Datos {
+  text-align: center;
+  margin-top: -13px;
+  margin-left: 26px;
+  height: 20px;
+  width: 200px;
+  position: absolute;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #000;
+  font-weight: bolder;
+  font-size: 80%;
+  color: #fff;
+  
+}
+
+#line {
+  width: 8px;
+  margin-left: 20px;
+  margin-top: 70px;
+  border: 2px solid #47c4dd;
+}
+
+#Num {
+  margin-top: 60px;
+  display: inline;
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  border: 1px solid black;
+  background-color: #000;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+}
+
+#DTP {
+  width: 30px;
+  margin: -4% 0% 0% 4%;
+  position: absolute;
+}
